@@ -1,0 +1,268 @@
+/* General styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  padding-bottom: 60px; /* Added space at the bottom to ensure content is not hidden behind the footer */
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 80px; /* Ensure space for footer and prevent overlap */
+}
+
+/* Section styles */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Video Introduction Section Styles */
+video {
+  width: 50%;
+  max-width: 800px;
+  max-height: 450px;
+  margin: 20px 0;
+  background-color: burlywood;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+video:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Skills list styles */
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between each skill */
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-item img {
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  object-fit: cover; /* Ensures images fit within the specified dimensions */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item p {
+  margin: 0;
+}
+
+.skill-item:hover img {
+  transform: scale(1.25); /* Enlarges image by 25% on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+}
+
+.skill-item:hover p {
+  color: #4CAF50; /* Optional: change text color on hover */
+}
+
+/* Contact Info Styles */
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin: 15px 0; /* Space between each contact item */
+  padding: 10px; /* Space inside each contact item */
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.contact-info li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px; /* Space between icon and text */
+  transition: transform 0.3s ease;
+}
+
+.contact-info li + li {
+  margin-top: 20px; /* Added space between the email and phone items */
+}
+
+.contact-info li:hover img {
+  transform: scale(1.1);
+}
+
+.contact-info li:hover {
+  transform: translateX(5px);
+  background-color: #e9ecef; /* Darker background on hover */
+}
+
+/* Social Media Icon Styles */
+.btn-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Increased width */
+  height: 100%; /* Increased height */
+  border-radius: 50%;
+  background-color: #ff69b4; /* Pink background */
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-circle img {
+  width: 50px; /* Increased width */
+  height: 50px; /* Increased height */
+}
+
+.btn-circle:hover {
+  background-color: #ff85c2; /* Lighter pink on hover */
+  transform: scale(1.1);
+}
+
+/* Portfolio section styles */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+  flex-basis: 30%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item h3 {
+  margin: 10px 0;
+}
+
+.portfolio-item p {
+  text-align: center;
+}
+
+/* About Me section styles */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-item {
+    flex-basis: 100%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0; /* Increased padding for better spacing */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
